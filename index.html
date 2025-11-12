@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice de Classes et Objets (TP)</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.PNG" alt="Logo du Lycée">
+        <h1>Mon Projet JavaScript : Gestion de Voitures</h1>
+    </header>
+
+    <main>
+        <!-- Formulaire de Saisie pour la nouvelle voiture -->
+        <h2>Créer une nouvelle Voiture</h2>
+        <div id="formulaire-saisie">
+            <label for="inputMarque">Marque :</label>
+            <input type="text" id="inputMarque" placeholder="Ex: Renault">
+            
+            <label for="inputAnnee">Année :</label>
+            <input type="number" id="inputAnnee" placeholder="Ex: 2024" min="1900" max="2030">
+            
+            <!-- Nouveau bouton pour créer la voiture depuis la saisie -->
+            <button onclick="creerNouvelleVoiture()">Créer Voiture</button>
+        </div>
+        
+        <hr>
+
+        <!-- Affichage des voitures instanciées -->
+        <h2>Voitures créées</h2>
+        <div id="resultats-voitures">
+            <p>Utilisez le formulaire ou le bouton 'Créer et Afficher les Objets' ci-dessous.</p>
+        </div>
+
+        <!-- Ancien bouton d'instanciation du TP -->
+        <button onclick="creationObjetsClasse()">Créer et Afficher les Objets du TP</button>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 - Pied de page habituel du Lycée - Développé pour le TP E6</p>
+    </footer>
+
+    <script src="fichierClasseJavascript.js"></script>
+</body>
+</html>
